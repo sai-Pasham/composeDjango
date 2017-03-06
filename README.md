@@ -1,10 +1,12 @@
 # composeDjango
 
 
-docker-compose run web django-admin.py startproject composeexample .
+<code>docker-compose run web django-admin.py startproject composeexample .</code>
 
 edit composeexample/settings.py
 Replace the DATABASES = ... with the following:
+</BR>
+<code>
  DATABASES = {
      'default': {
          'ENGINE': 'django.db.backends.postgresql',
@@ -14,9 +16,9 @@ Replace the DATABASES = ... with the following:
          'PORT': 5432,
      }
  }
+</code> 
  
- 
- docker-compose up
+ <code>docker-compose up </code>
  
  http://localhost:8000/
  
